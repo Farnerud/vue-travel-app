@@ -8,7 +8,10 @@
         </router-link>
         <figure>
           <router-link :to="destination.name">
-            <img :src="require(`@/assets/${destination.image}`)" :alt="destination.name" />
+            <img
+              :src="require(`@/assets/${destination.image}`)"
+              :alt="destination.name"
+            />
           </router-link>
         </figure>
       </div>
@@ -18,6 +21,7 @@
 
 <script>
 import store from "@/store.js";
+
 export default {
   name: "home",
   components: {},
